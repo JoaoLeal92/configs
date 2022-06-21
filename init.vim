@@ -19,6 +19,7 @@ Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple c
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
+Plug 'https://github.com/jiangmiao/auto-pairs' " Open and close brackets
 
 call plug#end()
 
@@ -49,3 +50,15 @@ nnoremap <C-t> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-f> :NERDTreeToggle<CR>
 nnoremap <C-a> <esc>ggVG<cr>
+
+" inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
+" use <tab> for trigger completion and navigate to the next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
