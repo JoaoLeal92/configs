@@ -20,6 +20,8 @@ Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
 Plug 'https://github.com/jiangmiao/auto-pairs' " Open and close brackets
+Plug 'https://github.com/junegunn/fzf' " Fuzzyfinder (requires silver_searcher)
+Plug 'https://github.com/junegunn/fzf.vim' " Fuzzyfinder (requires silver_searcher)
 
 call plug#end()
 
