@@ -54,6 +54,9 @@ nnoremap <C-f> :NERDTreeToggle<CR>
 nnoremap <C-a> <esc>ggVG<cr>
 nnoremap <C-j> 10j
 nnoremap <C-k> 10k
+nnoremap <C-L> :bn<CR>
+nnoremap <C-H> :bp<CR>
+nnoremap <C-w> :bd<CR>
 
 " inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 " use <tab> for trigger completion and navigate to the next complete item
