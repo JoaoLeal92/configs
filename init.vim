@@ -23,6 +23,9 @@ Plug 'https://github.com/jiangmiao/auto-pairs' " Open and close brackets
 Plug 'https://github.com/junegunn/fzf' " Fuzzyfinder (requires silver_searcher)
 Plug 'https://github.com/junegunn/fzf.vim' " Fuzzyfinder (requires silver_searcher)
 Plug 'https://github.com/fatih/vim-go' " Vim-go
+Plug 'https://github.com/RRethy/vim-illuminate' " Highliting words
+Plug 'https://github.com/mhinz/vim-signify' " Git signs on lines
+Plug 'https://github.com/tpope/vim-fugitive' " Git integration
 
 call plug#end()
 
