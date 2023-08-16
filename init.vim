@@ -6,6 +6,8 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
+:set clipboard=unnamed
+" set clipboard+=unnamedplus
 
 call plug#begin(stdpath('data') . '/plugged')
 
