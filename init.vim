@@ -63,6 +63,11 @@ nnoremap <C-k> 10k
 nnoremap <C-L> :bn<CR>
 nnoremap <C-H> :bp<CR>
 nnoremap <C-w> :bd<CR>
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gvnoremap <C-X> :bd<CR>
+
 
 " inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 " use <tab> for trigger completion and navigate to the next complete item
