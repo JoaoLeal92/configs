@@ -1,0 +1,7 @@
+require("options")
+require("keybindings")
+require("plugins")
+require("lsp.lsp")
+require("lsp.go")
+require("lsp.typescript")
+require("lsp.python")
