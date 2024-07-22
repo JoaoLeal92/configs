@@ -17,3 +17,11 @@ keymap('n', '<C-x>', ':bd<CR>')
 keymap('n', '<C-t>', ':NERDTreeFocus<CR>')
 keymap('n', '<C-n>', ':NERDTree<CR>')
 keymap('n', '<C-f>', ':NERDTreeToggle<CR>')
+
+-- trouble.nvim
+keymap("n", "<leader>xx", function() require("trouble").toggle() end)
+keymap("n", "<leader>xw", function() require("trouble").toggle("workspace_diagnostics") end)
+keymap("n", "<leader>xd", function() require("trouble").toggle("document_diagnostics") end)
+keymap("n", "<leader>xq", function() require("trouble").toggle("quickfix") end)
+keymap("n", "<leader>xl", function() require("trouble").toggle("loclist") end)
+keymap("n", "gR", function() require("trouble").toggle("lsp_references") end)
