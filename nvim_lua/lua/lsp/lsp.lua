@@ -5,7 +5,7 @@ mason.setup()
 mason_lsp.setup({
     ensure_installed = { 
 		"gopls", 
-		'tsserver', 
+		'ts_ls', 
 		'eslint', 
 		"pyright",
 	},
