@@ -25,3 +25,8 @@ keymap("n", "<leader>xd", function() require("trouble").toggle("document_diagnos
 keymap("n", "<leader>xq", function() require("trouble").toggle("quickfix") end)
 keymap("n", "<leader>xl", function() require("trouble").toggle("loclist") end)
 keymap("n", "gR", function() require("trouble").toggle("lsp_references") end)
+
+-- fzf
+keymap("n", "<leader>f", ':FzfLua files<CR>')
+keymap('n', '<leader>F', ':FzfLua live_grep<CR>')
+keymap('n', '<leader>b', ':FzfLua buffers<CR>')
