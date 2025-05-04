@@ -24,9 +24,10 @@ Plug 'folke/trouble.nvim' -- Listing errors
 Plug 'nvim-tree/nvim-web-devicons' -- Trouble dependency
 Plug 'https://github.com/ibhagwan/fzf-lua' -- fuzzyfinder
 
--- Plug 'https://github.com/junegunn/fzf' -- Fuzzyfinder (requires silver_searcher)
--- Plug 'https://github.com/junegunn/fzf.vim' -- Fuzzyfinder (requires silver_searcher)
--- Plug 'https://github.com/fatih/vim-go' " Vim-go
+-- Elixir
+Plug 'nvim-lua/plenary.nvim' -- Required dependency for elixir-tools
+Plug 'elixir-tools/elixir-tools.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
 
 vim.call('plug#end')
 

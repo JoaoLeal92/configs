@@ -8,5 +8,6 @@ mason_lsp.setup({
 		'ts_ls', 
 		'eslint', 
 		"pyright",
+		"elixirls",
 	},
 })
