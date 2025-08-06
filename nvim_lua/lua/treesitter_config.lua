@@ -9,6 +9,7 @@ require('nvim-treesitter.configs').setup {
       "typescript",
       "python",
       "go",
+      "clojure",
     },
     sync_install = true, -- Install parsers synchronously for Elixir
     auto_install = true,
