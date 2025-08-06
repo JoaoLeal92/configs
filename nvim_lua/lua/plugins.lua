@@ -29,6 +29,16 @@ Plug 'nvim-lua/plenary.nvim' -- Required dependency for elixir-tools
 Plug 'elixir-tools/elixir-tools.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
 
+-- Clojure
+Plug 'Olical/conjure' -- Interactive evaluation for Clojure
+Plug 'guns/vim-clojure-static' -- Clojure syntax highlighting and indentation
+Plug 'tpope/vim-fireplace' -- Clojure REPL integration
+Plug 'HiPhish/rainbow-delimiters.nvim' -- Rainbow parentheses for better bracket matching
+Plug 'clojure-vim/vim-jack-in' -- Easy nREPL connection
+Plug 'tpope/vim-dispatch' -- Dependency for vim-jack-in
+Plug 'radenling/vim-dispatch-neovim' -- Dependency for vim-jack-in
+
+
 vim.call('plug#end')
 
 -- airline configs
