@@ -9,5 +9,6 @@ mason_lsp.setup({
 		'eslint', 
 		"pyright",
 		"elixirls",
+		"clojure_lsp",
 	},
 })
