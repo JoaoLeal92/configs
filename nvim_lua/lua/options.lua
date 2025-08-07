@@ -3,6 +3,7 @@ local opt = vim.opt
 local cmd = vim.cmd
 
 g.mapleader = ' '
+vim.g.maplocalleader = ','
 
 opt.number = true
 opt.relativenumber = true
